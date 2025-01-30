@@ -73,6 +73,11 @@
     <artifactId>jsch</artifactId>
     <version>0.1.55</version> <!-- Or the latest version available -->
 </dependency>
+  <dependency>
+  	<groupId>Automation</groupId>
+  	<artifactId>Testingg</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </dependency>
   </dependencies>
 
   <build>
@@ -121,7 +126,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M5</version>
           <configuration>
-            <test>Lovya.triple.grw_shrk</test>
+            <test>Lovya.triple.analyticsengine</test>
           </configuration>
         </plugin>
       </plugins>
