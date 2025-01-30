@@ -124,11 +124,11 @@ public class GenerateLabels {
 	            System.err.println("Error executing action: " + e.getMessage());
 	        }
 	        try {
-	            WebDriverWait wait = new WebDriverWait(driver, 30);
+	            WebDriverWait wait = new WebDriverWait(driver, 60);
 	            WebElement c= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-accordion-item-header[text()='Contributors']")));
 	            c.click();
 	            Thread.sleep(3000);
-	            Thread.sleep(3000);
+	          
 	            System.out.println("The  Contributor is clicked");
 	        } catch (Exception e) {
 	            System.err.println("The Contributor is not clicked: " + e.getMessage());

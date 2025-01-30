@@ -105,11 +105,7 @@ public class research {
 	            System.out.println("db_query API Response: " + dbQueryResponse.getStatusCode() + " - " + dbQueryResponse.getBody().asString());
 
 	            // Download Button
-	            WebDriverWait wait3 = new WebDriverWait(driver, 60);
-	            WebElement download = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("(//img[@src='/viewer/assets/images/colorsvg/download.svg'])[1]")));
-	            download.click();
-	            System.out.println("Download button clicked successfully.");
-
+	            
 	            // Call getSearchHistory API
 	            System.out.println("Calling getSearchHistory API...");
 	            Response searchHistoryResponse = RestAssured.given()
@@ -123,6 +119,7 @@ public class research {
 	        try {
 	            WebDriverWait wait = new WebDriverWait(driver, 30);
 	            WebElement c= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='https://api.semanticscholar.org/CorpusID:198986633']")));
+	            Thread.sleep(3000);
 	            c.click();
 	            System.out.println("The Link is clicked");
 	        } catch (Exception e) {

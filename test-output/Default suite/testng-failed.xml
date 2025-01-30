@@ -3,22 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Lovya.triple.LLMAPI">
+      <class name="Lovya.triple.research">
         <methods>
-          <include name="testGetStatsGet"/>
-          <include name="testTagAtlasSearchPost"/>
-          <include name="testTagBrainSearchPost"/>
-          <include name="testTagSectionSearchPost"/>
-          <include name="testDbQueryGet"/>
-          <include name="testGetSearchHistoryGet"/>
-          <include name="testSaveSearchHistoryPost"/>
-          <include name="testSaveSearchHistoryGet"/>
-          <include name="testDbBrainQueryPost"/>
-          <include name="testGetSearchHistoryPost"/>
-          <include name="testTagOntologySearchPost"/>
-          <include name="testTagTileSearchPost"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="analyticsEngine"/>
         </methods>
-      </class> <!-- Lovya.triple.LLMAPI -->
+      </class> <!-- Lovya.triple.research -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
