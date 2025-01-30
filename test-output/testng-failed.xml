@@ -3,14 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Lovya.triple.editbox$ShortcutKey_add">
+      <class name="Lovya.triple.LLMAPI">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="search"/>
-          <include name="Direct_Draw_page"/>
+          <include name="testGetStatsGet"/>
+          <include name="testTagAtlasSearchPost"/>
+          <include name="testTagBrainSearchPost"/>
+          <include name="testTagSectionSearchPost"/>
+          <include name="testDbQueryGet"/>
+          <include name="testGetSearchHistoryGet"/>
+          <include name="testSaveSearchHistoryPost"/>
+          <include name="testSaveSearchHistoryGet"/>
+          <include name="testDbBrainQueryPost"/>
+          <include name="testGetSearchHistoryPost"/>
+          <include name="testTagOntologySearchPost"/>
+          <include name="testTagTileSearchPost"/>
         </methods>
-      </class> <!-- Lovya.triple.editbox$ShortcutKey_add -->
+      </class> <!-- Lovya.triple.LLMAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
