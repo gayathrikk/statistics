@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Lovya.triple.research">
+      <class name="Lovya.triple.DBQuery">
         <methods>
-          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="login"/>
           <include name="analyticsEngine"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Lovya.triple.research -->
+      </class> <!-- Lovya.triple.DBQuery -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
