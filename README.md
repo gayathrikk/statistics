@@ -1,2 +1,3 @@
 "# generateLabel" 
 "# researchButton" 
+"# statistics" 
